@@ -71,15 +71,6 @@
                 android:clickable="true"
                 />
 
-            <ImageView
-                android:id="@+id/lock1"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:src="@drawable/lock"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                />
-
         </RelativeLayout>
 
         <RelativeLayout
@@ -106,15 +97,6 @@
                 android:clickable="true"
                 />
 
-            <ImageView
-                android:id="@+id/lock2"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:src="@drawable/lock"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                />
-
         </RelativeLayout>
 
         <RelativeLayout
@@ -139,15 +121,6 @@
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
-                />
-
-            <ImageView
-                android:id="@+id/lock3"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:src="@drawable/lock"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
                 />
 
         </RelativeLayout>
@@ -187,15 +160,6 @@
                 android:clickable="true"
                 />
 
-            <ImageView
-                android:id="@+id/lock4"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:src="@drawable/lock"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                />
-
         </RelativeLayout>
 
         <RelativeLayout
@@ -220,15 +184,6 @@
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
-                android:visibility="gone"
-                />
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:src="@drawable/lock"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
                 />
 
         </RelativeLayout>
@@ -255,15 +210,6 @@
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
-                android:visibility="gone"
-                />
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:src="@drawable/lock"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
                 />
 
         </RelativeLayout>
@@ -290,23 +236,11 @@
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
-                android:visibility="gone"
                 />
 
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:src="@drawable/lock"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                />
 
         </RelativeLayout>
 
-
-
-
     </LinearLayout>
-
 
 </LinearLayout>

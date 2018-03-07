@@ -16,7 +16,6 @@ import com.example.abdullah_mansour.mathpuzzle.Stages.Stage5;
 
 public class Puzzles extends AppCompatActivity {
     private TextView stage1,stage2,stage3,stage4,stage5;
-    private ImageView lock1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

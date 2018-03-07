@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView contin_btn,puzzles_btn;
+    private TextView new_btn,puzzles_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

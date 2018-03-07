@@ -143,9 +143,5 @@ public class Stage2 extends AppCompatActivity {
             }
         });
 
-
-
-
-
     }
 }

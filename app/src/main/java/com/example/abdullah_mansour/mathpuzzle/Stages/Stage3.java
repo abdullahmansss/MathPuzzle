@@ -142,9 +142,5 @@ public class Stage3 extends AppCompatActivity {
             }
         });
 
-
-
-
-
     }
 }
