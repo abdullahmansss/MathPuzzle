@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="item_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/appstartup</item>
+        <item name="android:fontFamily">casual</item>
+    </style>
+
+    <style name="style2">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/appstartup</item>
+        <item name="android:fontFamily">casual</item>
+    </style>
+
+
+
+    <style name="puzzle_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">@color/appstartup</item>
+        <item name="android:fontFamily">casual</item>
+    </style>
+
+    <style name="submit_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/appstartup</item>
+        <item name="android:fontFamily">casual</item>
+    </style>
+
+</resources>

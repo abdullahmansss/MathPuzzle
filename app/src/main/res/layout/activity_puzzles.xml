@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abdullah_mansour.mathpuzzle.MainActivity"
+    android:background="@drawable/wooden_background"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:id="@+id/stage_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1"
+            style="@style/puzzle_style"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/image"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/stage_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2"
+                style="@style/puzzle_style"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                />
+
+            <ImageView
+                android:id="@+id/lock1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/lock"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/image"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/stage_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3"
+                style="@style/puzzle_style"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                />
+
+            <ImageView
+                android:id="@+id/lock2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/lock"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/image"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/stage_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="4"
+                style="@style/puzzle_style"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                />
+
+            <ImageView
+                android:id="@+id/lock3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/lock"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/image"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/stage_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5"
+                style="@style/puzzle_style"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                />
+
+            <ImageView
+                android:id="@+id/lock4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/lock"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/image"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/stage_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6"
+                style="@style/puzzle_style"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/lock"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/image"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/stage_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="7"
+                style="@style/puzzle_style"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/lock"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/image"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/stage_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8"
+                style="@style/puzzle_style"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/lock"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

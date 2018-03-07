@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الغاز رياضية</string>
+    <string name="contin">استمرار</string>
+    <string name="newgame">لعبة جديدة</string>
+    <string name="puzzles">ألغاز</string>
+    <string name="stage1">اللغز الأول</string>
+    <string name="stage2">اللغز الثاني</string>
+    <string name="stage3">اللغز الثالث</string>
+    <string name="stage4">اللغز الرابع</string>
+    <string name="stage5">اللغز الخامس</string>
+    <string name="mainmenu">القائمة الرئيسية</string>
+    <string name="quizz1">اكتمل اللغز الأول</string>
+    <string name="quizz2">اكتمل اللغز الثاني</string>
+    <string name="quizz3">اكتمل اللغز الثالث</string>
+    <string name="quizz4">اكتمل اللغز الرابع</string>
+    <string name="quizz5">اكتمل اللغز الخامس</string>
+</resources>
