@@ -28,11 +28,6 @@ public class Puzzles extends AppCompatActivity {
         stage4 = (TextView) findViewById(R.id.stage_4);
         stage5 = (TextView) findViewById(R.id.stage_5);
 
-        stage2.setVisibility(View.GONE);
-        stage3.setVisibility(View.GONE);
-        stage4.setVisibility(View.GONE);
-        stage5.setVisibility(View.GONE);
-
         stage1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
