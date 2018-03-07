@@ -27,6 +27,8 @@ public class Trophy3 extends AppCompatActivity {
 
         contin = (TextView) findViewById(R.id.contin_btn);
         mainmenu = (TextView) findViewById(R.id.main_menu_btn);
+        share = (ImageView) findViewById(R.id.share_btn);
+        rate = (ImageView) findViewById(R.id.rate_btn);
 
         contin.setOnClickListener(new View.OnClickListener() {
             @Override
