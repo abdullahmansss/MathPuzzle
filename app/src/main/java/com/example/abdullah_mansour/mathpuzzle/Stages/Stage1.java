@@ -14,11 +14,12 @@ import com.example.abdullah_mansour.mathpuzzle.R;
 import com.example.abdullah_mansour.mathpuzzle.Trophies.Trophy1;
 
 public class Stage1 extends AppCompatActivity {
-
     private TextView numberstext;
     private ImageView delete,idea;
     private TextView submit;
     private ImageView number0,number1,number2,number3,number4,number5,number6,number7,number8,number9;
+
+    // Abdullah-Mansour
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -143,9 +144,6 @@ public class Stage1 extends AppCompatActivity {
 
             }
         });
-
-
-
 
     }
 }
