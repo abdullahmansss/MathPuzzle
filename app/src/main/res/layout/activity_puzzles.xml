@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.abdullah_mansour.mathpuzzle.MainActivity"
-    android:background="@drawable/wooden_background"
+    android:background="@drawable/rsz_1wooden_background"
     android:orientation="vertical"
     android:id="@+id/puzzleslayout"
     >

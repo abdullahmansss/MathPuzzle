@@ -5,7 +5,7 @@
     android:id="@+id/insidestage1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/wooden_background"
+    android:background="@drawable/rsz_1wooden_background"
     android:orientation="vertical"
     tools:context="com.example.abdullah_mansour.mathpuzzle.MainActivity">
 
@@ -49,8 +49,8 @@
 
         <TextView
             android:id="@+id/hinttext"
-            style="@style/submit_style"
-            android:layout_width="210dp"
+            style="@style/hint_style"
+            android:layout_width="200dp"
             android:layout_height="35dp"
             android:layout_below="@+id/relativeLayout"
             android:layout_gravity="center_vertical"
@@ -59,7 +59,7 @@
             android:layout_toStartOf="@+id/idea_btn"
             android:background="@drawable/image"
             android:gravity="center"
-            android:text=" multiplied numbers "
+            android:text=" multiple numbers "
             android:visibility="invisible" />
 
 
