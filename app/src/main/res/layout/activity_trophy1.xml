@@ -7,6 +7,7 @@
     tools:context="com.example.abdullah_mansour.mathpuzzle.Trophies.Trophy1"
     android:background="@drawable/wooden_background"
     android:orientation="vertical"
+    android:id="@+id/trophy1layout"
     >
 
     <TextView
@@ -19,6 +20,7 @@
         />
 
     <RelativeLayout
+        android:id="@+id/trophy1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -40,13 +42,16 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/continlayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
         >
 
         <ImageView
-            android:layout_width="match_parent"
+            android:id="@+id/contin_image"
+            android:layout_width="200dp"
             android:layout_height="60dp"
             android:src="@drawable/image"
             android:layout_marginRight="60dp"
@@ -68,11 +73,15 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/trophy1mainmenu"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
 
         <ImageView
-            android:layout_width="match_parent"
+            android:id="@+id/main_menu_image"
+            android:layout_width="200dp"
             android:layout_height="60dp"
             android:src="@drawable/image"
             android:layout_marginRight="60dp"

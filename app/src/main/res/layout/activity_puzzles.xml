@@ -8,238 +8,279 @@
     tools:context="com.example.abdullah_mansour.mathpuzzle.MainActivity"
     android:background="@drawable/wooden_background"
     android:orientation="vertical"
+    android:id="@+id/puzzleslayout"
     >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0sp"
+        android:layout_weight="1"
         android:orientation="horizontal"
         android:layout_margin="5dp"
         >
 
-        <RelativeLayout
+
+        <Button
+            android:id="@+id/stage_1"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="100dp"
-            android:gravity="center"
-            android:layout_gravity="center_horizontal"
-            >
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/image"
-            android:padding="5dp"
-            />
-
-        <TextView
-            android:id="@+id/stage_1"
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="1"
             style="@style/puzzle_style"
-            android:gravity="center"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:clickable="true"
+            android:background="@drawable/image"
+            android:layout_margin="5dp"
             />
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="100dp">
-
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/image"
-                android:padding="5dp"
-                />
-
-            <TextView
+            <Button
                 android:id="@+id/stage_2"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="2"
                 style="@style/puzzle_style"
-                android:gravity="center"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:clickable="true"
+                android:background="@drawable/image"
+                android:layout_margin="5dp"
                 />
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="100dp">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/image"
-                android:padding="5dp"
-                />
-
-            <TextView
+            <Button
                 android:id="@+id/stage_3"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="3"
                 style="@style/puzzle_style"
-                android:gravity="center"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:clickable="true"
+                android:background="@drawable/image"
+                android:layout_margin="5dp"
                 />
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="100dp">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/image"
-                android:padding="5dp"
-                />
-
-            <TextView
+            <Button
                 android:id="@+id/stage_4"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="4"
                 style="@style/puzzle_style"
-                android:gravity="center"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:clickable="true"
+                android:background="@drawable/image"
+                android:layout_margin="5dp"
                 />
-
-        </RelativeLayout>
-
 
     </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0sp"
+        android:layout_weight="1"
         android:orientation="horizontal"
         android:layout_margin="5dp"
         >
 
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="100dp">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/image"
-                android:padding="5dp"
-                />
-
-            <TextView
+            <Button
                 android:id="@+id/stage_5"
-                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="5"
                 style="@style/puzzle_style"
-                android:gravity="center"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:clickable="true"
+                android:background="@drawable/image"
                 />
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="100dp">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/image"
-                android:padding="5dp"
-                />
-
-            <TextView
+            <Button
                 android:id="@+id/stage_6"
-                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="6"
                 style="@style/puzzle_style"
-                android:gravity="center"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:clickable="true"
+                android:background="@drawable/image"
                 />
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="100dp">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/image"
-                android:padding="5dp"
-                />
-
-            <TextView
+            <Button
                 android:id="@+id/stage_7"
-                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="7"
                 style="@style/puzzle_style"
-                android:gravity="center"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:clickable="true"
+                android:background="@drawable/image"
                 />
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="100dp">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/image"
-                android:padding="5dp"
-                />
-
-            <TextView
+            <Button
                 android:id="@+id/stage_8"
-                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="8"
                 style="@style/puzzle_style"
-                android:gravity="center"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:clickable="true"
+                android:background="@drawable/image"
                 />
 
+    </LinearLayout>
 
-        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+            <Button
+                android:id="@+id/stage_9"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="9"
+                style="@style/puzzle_style"
+                android:background="@drawable/image"
+                />
+
+            <Button
+                android:id="@+id/stage_10"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="10"
+                style="@style/puzzle_style"
+                android:background="@drawable/image"
+                />
+
+            <Button
+                android:id="@+id/stage_11"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="11"
+                style="@style/puzzle_style"
+                android:background="@drawable/image"
+                />
+
+            <Button
+                android:id="@+id/stage_12"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="12"
+                style="@style/puzzle_style"
+                android:background="@drawable/image"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+
+            <Button
+                android:id="@+id/stage_13"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="13"
+                style="@style/puzzle_style"
+                android:background="@drawable/image"
+                />
+
+            <Button
+                android:id="@+id/stage_14"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="14"
+                style="@style/puzzle_style"
+                android:background="@drawable/image"
+                />
+
+            <Button
+                android:id="@+id/stage_15"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="15"
+                style="@style/puzzle_style"
+                android:background="@drawable/image"
+                />
+
+            <Button
+                android:id="@+id/stage_16"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="16"
+                style="@style/puzzle_style"
+                android:background="@drawable/image"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+            <Button
+                android:id="@+id/stage_17"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="17"
+                style="@style/puzzle_style"
+                android:background="@drawable/image"
+                />
+
+            <Button
+                android:id="@+id/stage_18"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="18"
+                style="@style/puzzle_style"
+                android:background="@drawable/image"
+                />
+
+            <Button
+                android:id="@+id/stage_19"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="19"
+                style="@style/puzzle_style"
+                android:background="@drawable/image"
+                />
+
+            <Button
+                android:id="@+id/stage_20"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="20"
+                style="@style/puzzle_style"
+                android:background="@drawable/image"
+                />
 
     </LinearLayout>
 
