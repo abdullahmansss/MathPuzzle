@@ -8,6 +8,7 @@
     tools:context="com.example.abdullah_mansour.mathpuzzle.MainActivity"
     android:background="@drawable/wooden_background"
     android:orientation="vertical"
+    android:id="@+id/insidestage1"
     >
 
     <RelativeLayout
@@ -53,6 +54,23 @@
             android:src="@drawable/idea3" />
 
         <TextView
+            android:id="@+id/hinttext"
+            style="@style/submit_style"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="13dp"
+            android:layout_toLeftOf="@+id/idea_btn"
+            android:layout_toStartOf="@+id/idea_btn"
+            android:background="@drawable/image"
+            android:text=" add numbers "
+            android:visibility="invisible"
+            android:gravity="center"
+            />
+
+
+        <TextView
             android:id="@+id/textView"
             style="@style/item_style"
             android:layout_width="wrap_content"
@@ -63,7 +81,7 @@
             android:layout_marginLeft="68dp"
             android:layout_marginStart="68dp"
             android:gravity="center"
-            android:text="if," />
+            android:text="if ," />
 
         <TextView
             android:id="@+id/textView2"
@@ -75,7 +93,7 @@
             android:layout_marginStart="18dp"
             android:layout_toEndOf="@+id/textView5"
             android:layout_toRightOf="@+id/textView5"
-            android:text="5 , 3 = 10" />
+            android:text="2 , 2.5 = 4.5" />
 
         <TextView
             style="@style/item_style"
@@ -86,7 +104,7 @@
             android:layout_toEndOf="@+id/textView5"
             android:layout_toRightOf="@+id/textView5"
             android:layout_below="@+id/textView2"
-            android:text="2 , 4 = 3"
+            android:text="3 , 3 = 6"
             android:id="@+id/textView3" />
 
         <TextView
@@ -99,7 +117,7 @@
             android:layout_toEndOf="@+id/textView5"
             android:layout_toRightOf="@+id/textView5"
             android:layout_below="@+id/textView3"
-            android:text="3 , 1 = -2" />
+            android:text="8 , 4.5 = 12.5" />
 
         <TextView
             style="@style/item_style"
@@ -108,7 +126,7 @@
             android:layout_alignLeft="@+id/textView"
             android:layout_alignStart="@+id/textView"
             android:layout_below="@+id/textView4"
-            android:text="then,"
+            android:text="then ,"
             android:id="@+id/textView5" />
 
         <TextView
@@ -117,164 +135,253 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/textView3"
             android:layout_below="@+id/textView5"
-            android:text="9 , 7 = ?" />
+            android:text="5 , 5.5 = ?" />
 
     </RelativeLayout>
 
-    <RelativeLayout
+    // <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_margin="10dp"
-        >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:layout_above="@+id/numbers"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"
-            >
-
-
-            <TextView
-                android:id="@+id/numberstext"
-                android:layout_width="0dp"
-                android:layout_weight="2"
-                android:layout_height="50dp"
-                android:background="@drawable/circle_border"
-                android:layout_gravity="center_vertical"
-                style="@style/style2"
-                />
-
-            <ImageView
-                android:id="@+id/deletetext"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="50dp"
-                android:src="@drawable/delete"
-                android:clickable="true"
-                />
-
-            <TextView
-                android:id="@+id/submit_btn"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="50dp"
-                android:text="SUBMIT"
-                style="@style/submit_style"
-                android:background="@drawable/circle_border"
-                android:clickable="true"
-                android:gravity="center"
-                />
-
-        </LinearLayout>
-
-        // <LinearLayout
-        android:id="@+id/numbers"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
         android:orientation="horizontal"
-        android:layout_above="@+id/numbers2"
+        android:layout_above="@+id/numbers"
         android:layout_marginBottom="10dp"
         android:gravity="center"
-
         >
 
-        <ImageView
-            android:id="@+id/number0"
+
+        <TextView
+            android:id="@+id/numberstext"
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:src="@drawable/zero"
+            android:layout_weight="3"
+            android:layout_height="60dp"
+            android:background="@drawable/image"
+            android:layout_gravity="center_vertical"
+            style="@style/style2"
+            android:layout_marginRight="5dp"
             />
 
-        <ImageView
-            android:id="@+id/number1"
+        <Button
+            android:id="@+id/deletetext"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:src="@drawable/one"
+            android:layout_height="60dp"
+            android:background="@drawable/image"
+            android:clickable="true"
+            android:text="x"
+            style="@style/style2"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
             />
 
-        <ImageView
-            android:id="@+id/number2"
+        <Button
+            android:id="@+id/submit_btn"
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:src="@drawable/two"
+            android:layout_weight="2"
+            android:layout_height="60dp"
+            android:text="SUBMIT"
+            style="@style/submit_style"
+            android:background="@drawable/image"
+            android:clickable="true"
+            android:gravity="center"
             />
-
-        <ImageView
-            android:id="@+id/number3"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:src="@drawable/three"
-            />
-
-        <ImageView
-            android:id="@+id/number4"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:src="@drawable/four"
-            />
-
-        <ImageView
-            android:id="@+id/number5"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:src="@drawable/five"
-            />
-
-        <ImageView
-            android:id="@+id/number6"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:src="@drawable/six"
-            />
-
-
 
     </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/numbers2"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:layout_alignParentBottom="true"
+    // <LinearLayout
+    android:id="@+id/numbers"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:layout_above="@+id/numbers2"
+    android:layout_marginBottom="10dp"
+    android:gravity="center"
+
+    >
+
+    <Button
+        android:id="@+id/number0"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        android:background="@drawable/image"
+        android:text="0"
+        style="@style/style2"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        />
+
+    <Button
+        android:id="@+id/number1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        android:background="@drawable/image"
+        android:text="1"
+        style="@style/style2"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        />
+
+    <Button
+        android:id="@+id/number2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        android:background="@drawable/image"
+        android:text="2"
+        style="@style/style2"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        />
+
+    <Button
+        android:id="@+id/number3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        android:background="@drawable/image"
+        android:text="3"
+        style="@style/style2"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        />
+
+    <Button
+        android:id="@+id/number4"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        android:background="@drawable/image"
+        android:text="4"
+        style="@style/style2"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        />
+
+    <Button
+        android:id="@+id/number5"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        android:background="@drawable/image"
+        android:text="5"
+        style="@style/style2"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        />
+
+    <Button
+        android:id="@+id/number6"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        android:background="@drawable/image"
+        android:text="6"
+        style="@style/style2"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        />
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/numbers2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/number7"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:background="@drawable/image"
+            android:text="7"
+            style="@style/style2"
             android:gravity="center"
-            >
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            />
 
-            <ImageView
-                android:id="@+id/number7"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/seven"
-                />
+        <Button
+            android:id="@+id/number8"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:background="@drawable/image"
+            android:text="8"
+            style="@style/style2"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            />
 
-            <ImageView
-                android:id="@+id/number8"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/eight"
-                />
+        <Button
+            android:id="@+id/number9"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:background="@drawable/image"
+            android:text="9"
+            style="@style/style2"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            />
 
-            <ImageView
-                android:id="@+id/number9"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/nine"
-                />
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:background="@drawable/image"
+            android:text="-"
+            style="@style/style2"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            />
 
-        </LinearLayout>
+        <Button
+            android:id="@+id/dot"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:background="@drawable/image"
+            android:text="."
+            style="@style/style2"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            />
 
-    </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
 
 </LinearLayout>
 

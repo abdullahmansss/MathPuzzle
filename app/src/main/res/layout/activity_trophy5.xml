@@ -7,6 +7,7 @@
     tools:context="com.example.abdullah_mansour.mathpuzzle.Trophies.Trophy1"
     android:background="@drawable/wooden_background"
     android:orientation="vertical"
+    android:id="@+id/trophy1layout"
     >
 
     <TextView
@@ -19,6 +20,7 @@
         />
 
     <RelativeLayout
+        android:id="@+id/trophy1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -39,66 +41,35 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        >
+    <Button
+        android:id="@+id/contin_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="@string/contin"
+        style="@style/item_style"
+        android:clickable="true"
+        android:background="@drawable/image"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:src="@drawable/image"
-            android:layout_marginRight="60dp"
-            android:layout_marginLeft="60dp"
-            />
 
-        <TextView
-            android:id="@+id/contin_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/contin"
-            style="@style/item_style"
-            android:gravity="center"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:clickable="true"
-            />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:src="@drawable/image"
-            android:layout_marginRight="60dp"
-            android:layout_marginLeft="60dp"
-            />
-
-        <TextView
-            android:id="@+id/main_menu_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/mainmenu"
-            style="@style/item_style"
-            android:gravity="center"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:clickable="true"
-            />
-
-    </RelativeLayout>
+    <Button
+        android:id="@+id/main_menu_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="@string/mainmenu"
+        style="@style/item_style"
+        android:clickable="true"
+        android:background="@drawable/image"
+        android:layout_gravity="center"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="5dp"
         >
 
         <ImageView

@@ -92,9 +92,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="6"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 />
 
             <Button
@@ -103,9 +102,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="7"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 />
 
             <Button
@@ -114,9 +112,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="8"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 />
 
     </LinearLayout>
@@ -135,9 +132,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="9"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 />
 
             <Button
@@ -146,9 +142,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="10"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 />
 
             <Button
@@ -157,9 +152,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="11"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 />
 
             <Button
@@ -168,9 +162,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="12"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 />
 
     </LinearLayout>
@@ -190,9 +183,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="13"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 />
 
             <Button
@@ -201,9 +193,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="14"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 />
 
             <Button
@@ -212,9 +203,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="15"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 />
 
             <Button
@@ -223,9 +213,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="16"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 />
 
     </LinearLayout>
@@ -244,9 +233,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="17"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 />
 
             <Button
@@ -255,9 +243,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="18"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 />
 
             <Button
@@ -266,9 +253,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="19"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 />
 
             <Button
@@ -277,9 +263,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="20"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 />
 
     </LinearLayout>

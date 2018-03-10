@@ -2,21 +2,30 @@ package com.example.abdullah_mansour.mathpuzzle.Trophies;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.Uri;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.example.abdullah_mansour.mathpuzzle.MainActivity;
 import com.example.abdullah_mansour.mathpuzzle.R;
 import com.example.abdullah_mansour.mathpuzzle.Stages.Stage2;
 import com.example.abdullah_mansour.mathpuzzle.Stages.Stage3;
 
 public class Trophy2 extends AppCompatActivity {
-    private TextView contin,mainmenu;
+    private Button contin,mainmenu;
     private ImageView share,rate;
+    private RelativeLayout trophy;
+    private MediaPlayer mp;
+    private static int TIME_OUT = 700; //Time to launch the another activity
 
 
 
@@ -25,30 +34,71 @@ public class Trophy2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trophy2);
 
-        contin = (TextView) findViewById(R.id.contin_btn);
-        mainmenu = (TextView) findViewById(R.id.main_menu_btn);
+        contin = (Button) findViewById(R.id.contin_btn);
+        mainmenu = (Button) findViewById(R.id.main_menu_btn);
         share = (ImageView) findViewById(R.id.share_btn);
         rate = (ImageView) findViewById(R.id.rate_btn);
+        trophy = (RelativeLayout) findViewById(R.id.trophy1);
+
+        releaseMediaPlayer();
+        mp = MediaPlayer.create(Trophy2.this, R.raw.clapping);
+        mp.start();
+
+        YoYo.with(Techniques.FadeInDown)
+                .duration(2500)
+                .playOn(findViewById(R.id.trophy1));
 
         contin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent n = new Intent(Trophy2.this, Stage3.class);
-                startActivity(n);
+                releaseMediaPlayer();
+                mp = MediaPlayer.create(Trophy2.this, R.raw.click);
+                mp.start();
+
+                YoYo.with(Techniques.Tada)
+                        .duration(1000)
+                        .playOn(findViewById(R.id.contin_btn));
+
+                final View myLayout = findViewById(R.id.trophy1layout);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent i = new Intent(Trophy2.this, Stage3.class);
+                        startActivity(i);
+                    }
+                }, TIME_OUT);
             }
         });
 
         mainmenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent n = new Intent(Trophy2.this, MainActivity.class);
-                startActivity(n);
+                releaseMediaPlayer();
+                mp = MediaPlayer.create(Trophy2.this, R.raw.click);
+                mp.start();
+
+                YoYo.with(Techniques.Tada)
+                        .duration(1000)
+                        .playOn(findViewById(R.id.main_menu_btn));
+
+                final View myLayout = findViewById(R.id.trophy1layout);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent i = new Intent(Trophy2.this, MainActivity.class);
+                        startActivity(i);
+                    }
+                }, TIME_OUT);
             }
         });
 
         share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+                mp = MediaPlayer.create(Trophy2.this, R.raw.click);
+                mp.start();
+
                 Intent n = new Intent(Intent.ACTION_SEND);
                 n.setType("text/plain");
                 String sharebody = "I Completed Quiz 2 in Math Quiz Game";
@@ -60,6 +110,10 @@ public class Trophy2 extends AppCompatActivity {
         rate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+                mp = MediaPlayer.create(Trophy2.this, R.raw.click);
+                mp.start();
+
                 try {
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/abdullahmanss")));
                 }
@@ -69,5 +123,26 @@ public class Trophy2 extends AppCompatActivity {
                 }
             }
         });
+
     }
+
+    private void releaseMediaPlayer()
+    {
+        if (mp != null)
+        {
+            mp.release();
+        }
+        mp = null;
+    }
+
+    @Override
+    protected void onStop() {
+        mp.stop();
+        releaseMediaPlayer();
+        super.onStop();
+    }
+
+    @Override
+    public void onBackPressed() {}
+
 }

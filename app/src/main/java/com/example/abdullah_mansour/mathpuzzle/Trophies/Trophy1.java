@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ImageView.*;
 import android.widget.RelativeLayout;
@@ -28,8 +29,8 @@ import com.example.abdullah_mansour.mathpuzzle.Stages.Stage2;
 
 
 public class Trophy1 extends AppCompatActivity {
-    private TextView contin,mainmenu;
-    private ImageView share,rate,continu,main;
+    private Button contin,mainmenu;
+    private ImageView share,rate;
     private RelativeLayout trophy;
     private MediaPlayer mp;
     private static int TIME_OUT = 700; //Time to launch the another activity
@@ -41,14 +42,13 @@ public class Trophy1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trophy1);
 
-        contin = (TextView) findViewById(R.id.contin_btn);
-        mainmenu = (TextView) findViewById(R.id.main_menu_btn);
+        contin = (Button) findViewById(R.id.contin_btn);
+        mainmenu = (Button) findViewById(R.id.main_menu_btn);
         share = (ImageView) findViewById(R.id.share_btn);
         rate = (ImageView) findViewById(R.id.rate_btn);
         trophy = (RelativeLayout) findViewById(R.id.trophy1);
-        continu = (ImageView) findViewById(R.id.contin_image);
-        main = (ImageView) findViewById(R.id.main_menu_image);
 
+        releaseMediaPlayer();
         mp = MediaPlayer.create(Trophy1.this, R.raw.clapping);
         mp.start();
 
@@ -59,54 +59,19 @@ public class Trophy1 extends AppCompatActivity {
         contin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+                mp = MediaPlayer.create(Trophy1.this, R.raw.click);
+                mp.start();
 
                 YoYo.with(Techniques.Tada)
                         .duration(1000)
-                        .playOn(findViewById(R.id.continlayout));
+                        .playOn(findViewById(R.id.contin_btn));
 
                 final View myLayout = findViewById(R.id.trophy1layout);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         Intent i = new Intent(Trophy1.this, Stage2.class);
-                        startActivity(i);
-                    }
-                }, TIME_OUT);
-            }
-        });
-
-        continu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                YoYo.with(Techniques.Tada)
-                        .duration(1000)
-                        .playOn(findViewById(R.id.continlayout));
-
-                final View myLayout = findViewById(R.id.trophy1layout);
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        Intent i = new Intent(Trophy1.this, Stage2.class);
-                        startActivity(i);
-                    }
-                }, TIME_OUT);
-            }
-        });
-
-        main.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                YoYo.with(Techniques.Tada)
-                        .duration(1000)
-                        .playOn(findViewById(R.id.trophy1mainmenu));
-
-                final View myLayout = findViewById(R.id.trophy1layout);
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        Intent i = new Intent(Trophy1.this, MainActivity.class);
                         startActivity(i);
                     }
                 }, TIME_OUT);
@@ -116,9 +81,13 @@ public class Trophy1 extends AppCompatActivity {
         mainmenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+                mp = MediaPlayer.create(Trophy1.this, R.raw.click);
+                mp.start();
+
                 YoYo.with(Techniques.Tada)
                         .duration(1000)
-                        .playOn(findViewById(R.id.trophy1mainmenu));
+                        .playOn(findViewById(R.id.main_menu_btn));
 
                 final View myLayout = findViewById(R.id.trophy1layout);
                 new Handler().postDelayed(new Runnable() {
@@ -134,6 +103,10 @@ public class Trophy1 extends AppCompatActivity {
         share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+                mp = MediaPlayer.create(Trophy1.this, R.raw.click);
+                mp.start();
+
                 Intent n = new Intent(Intent.ACTION_SEND);
                 n.setType("text/plain");
                 String sharebody = "I Completed Quiz 1 in Math Quiz Game";
@@ -145,6 +118,10 @@ public class Trophy1 extends AppCompatActivity {
         rate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+                mp = MediaPlayer.create(Trophy1.this, R.raw.click);
+                mp.start();
+
                 try {
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/abdullahmanss")));
                 }
@@ -157,9 +134,19 @@ public class Trophy1 extends AppCompatActivity {
 
     }
 
+    private void releaseMediaPlayer()
+    {
+        if (mp != null)
+        {
+            mp.release();
+        }
+        mp = null;
+    }
+
     @Override
     protected void onStop() {
         mp.stop();
+        releaseMediaPlayer();
         super.onStop();
     }
 

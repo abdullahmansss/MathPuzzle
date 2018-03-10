@@ -70,6 +70,8 @@ public class Stage1 extends AppCompatActivity {
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+
                 mp = MediaPlayer.create(Stage1.this, R.raw.click);
                 mp.start();
 
@@ -83,6 +85,8 @@ public class Stage1 extends AppCompatActivity {
         number0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+
                 mp = MediaPlayer.create(Stage1.this, R.raw.click);
                 mp.start();
 
@@ -96,6 +100,8 @@ public class Stage1 extends AppCompatActivity {
         number1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+
                 mp = MediaPlayer.create(Stage1.this, R.raw.click);
                 mp.start();
 
@@ -109,6 +115,8 @@ public class Stage1 extends AppCompatActivity {
         number2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+
                 mp = MediaPlayer.create(Stage1.this, R.raw.click);
                 mp.start();
 
@@ -122,6 +130,8 @@ public class Stage1 extends AppCompatActivity {
         number3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+
                 mp = MediaPlayer.create(Stage1.this, R.raw.click);
                 mp.start();
 
@@ -135,6 +145,8 @@ public class Stage1 extends AppCompatActivity {
         number4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+
                 mp = MediaPlayer.create(Stage1.this, R.raw.click);
                 mp.start();
 
@@ -148,6 +160,8 @@ public class Stage1 extends AppCompatActivity {
         number5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+
                 mp = MediaPlayer.create(Stage1.this, R.raw.click);
                 mp.start();
 
@@ -161,6 +175,8 @@ public class Stage1 extends AppCompatActivity {
         number6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+
                 mp = MediaPlayer.create(Stage1.this, R.raw.click);
                 mp.start();
 
@@ -174,6 +190,8 @@ public class Stage1 extends AppCompatActivity {
         number7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+
                 mp = MediaPlayer.create(Stage1.this, R.raw.click);
                 mp.start();
 
@@ -187,6 +205,8 @@ public class Stage1 extends AppCompatActivity {
         number8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+
                 mp = MediaPlayer.create(Stage1.this, R.raw.click);
                 mp.start();
 
@@ -200,6 +220,8 @@ public class Stage1 extends AppCompatActivity {
         number9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+
                 mp = MediaPlayer.create(Stage1.this, R.raw.click);
                 mp.start();
 
@@ -213,6 +235,8 @@ public class Stage1 extends AppCompatActivity {
         minus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+
                 mp = MediaPlayer.create(Stage1.this, R.raw.click);
                 mp.start();
 
@@ -226,6 +250,8 @@ public class Stage1 extends AppCompatActivity {
         dot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                releaseMediaPlayer();
+
                 mp = MediaPlayer.create(Stage1.this, R.raw.click);
                 mp.start();
 
@@ -242,6 +268,8 @@ public class Stage1 extends AppCompatActivity {
             public void onClick(View view) {
                 if (numberstext.getText().toString().equals(" 10"))
                 {
+                    releaseMediaPlayer();
+
                     mp = MediaPlayer.create(Stage1.this, R.raw.click);
                     mp.start();
 
@@ -260,6 +288,8 @@ public class Stage1 extends AppCompatActivity {
                 }
                 else
                 {
+                    releaseMediaPlayer();
+
                     mp = MediaPlayer.create(Stage1.this, R.raw.click);
                     mp.start();
 
@@ -302,6 +332,8 @@ public class Stage1 extends AppCompatActivity {
                                     .repeat(1)
                                     .playOn(findViewById(R.id.idea_btn));
 
+                            releaseMediaPlayer();
+
                             mp = MediaPlayer.create(Stage1.this, R.raw.idea);
                             mp.start();
 
@@ -319,6 +351,14 @@ public class Stage1 extends AppCompatActivity {
 
     }
 
+    private void releaseMediaPlayer()
+    {
+        if (mp != null)
+        {
+            mp.release();
+        }
+        mp = null;
+    }
 
 
     @Override
