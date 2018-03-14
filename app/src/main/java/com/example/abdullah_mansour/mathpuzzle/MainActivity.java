@@ -1,9 +1,11 @@
 package com.example.abdullah_mansour.mathpuzzle;
 
 import android.annotation.TargetApi;
+import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Handler;
@@ -15,11 +17,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.example.abdullah_mansour.mathpuzzle.data.QuizzesContract.QuizzesEntry;
+
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.example.abdullah_mansour.mathpuzzle.Stages.Stage1;
 import com.example.abdullah_mansour.mathpuzzle.Trophies.Trophy1;
+import com.example.abdullah_mansour.mathpuzzle.data.QuizzesContract;
+import com.example.abdullah_mansour.mathpuzzle.data.QuizzesDBHelper;
 
 public class MainActivity extends AppCompatActivity {
     private Button new_btn,puzzles_btn;
@@ -31,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         new_btn = (Button) findViewById(R.id.newgame_btn);
         puzzles_btn = (Button) findViewById(R.id.quiz_btn);
@@ -47,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         YoYo.with(Techniques.FadeInDown)
                 .duration(3000)
                 .playOn(findViewById(R.id.quiz_btn));
+
 
         puzzles_btn.setOnClickListener(new View.OnClickListener() {
             @Override

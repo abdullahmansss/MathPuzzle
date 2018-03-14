@@ -14,4 +14,6 @@
     <string name="quizz3">Quiz 3 Completed</string>
     <string name="quizz4">Quiz 4 Completed</string>
     <string name="quizz5">Quiz 5 Completed</string>
+    <string name="preference_file_key">preef</string>
+    <string name="saved_high_score_key">level</string>
 </resources>

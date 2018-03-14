@@ -1,7 +1,9 @@
 package com.example.abdullah_mansour.mathpuzzle.Trophies;
 
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Handler;
@@ -16,6 +18,7 @@ import android.widget.TextView;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.example.abdullah_mansour.mathpuzzle.MainActivity;
+import com.example.abdullah_mansour.mathpuzzle.Puzzles;
 import com.example.abdullah_mansour.mathpuzzle.R;
 import com.example.abdullah_mansour.mathpuzzle.Stages.Stage2;
 import com.example.abdullah_mansour.mathpuzzle.Stages.Stage3;
@@ -40,6 +43,13 @@ public class Trophy2 extends AppCompatActivity {
         rate = (ImageView) findViewById(R.id.rate_btn);
         trophy = (RelativeLayout) findViewById(R.id.trophy1);
 
+        Context context = Trophy2.this;
+        SharedPreferences sharedPref = context.getSharedPreferences(getString(R.string.preference_file_key), Context.MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putInt(getString(R.string.saved_high_score_key), 2);
+        editor.commit();
+
         releaseMediaPlayer();
         mp = MediaPlayer.create(Trophy2.this, R.raw.clapping);
         mp.start();
@@ -63,7 +73,7 @@ public class Trophy2 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Intent i = new Intent(Trophy2.this, Stage3.class);
+                        Intent i = new Intent(Trophy2.this, Puzzles.class);
                         startActivity(i);
                     }
                 }, TIME_OUT);

@@ -36,9 +36,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="2"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 android:layout_margin="5dp"
                 />
 
@@ -47,9 +46,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="3"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 android:layout_margin="5dp"
                 />
 
@@ -58,9 +56,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="4"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 android:layout_margin="5dp"
                 />
 
@@ -81,9 +78,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="5"
                 style="@style/puzzle_style"
-                android:background="@drawable/image"
+                android:background="@drawable/lock"
                 />
 
             <Button
