@@ -480,28 +480,6 @@ public class Puzzles extends AppCompatActivity {
                 }
             });
 
-            stage5.setText("5");
-            stage5.setBackgroundResource(R.drawable.image);
-            stage5.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    mp = MediaPlayer.create(Puzzles.this, R.raw.click);
-                    mp.start();
-
-                    YoYo.with(Techniques.Tada)
-                            .duration(1000)
-                            .playOn(findViewById(R.id.stage_5));
-
-                    final View myLayout = findViewById(R.id.puzzleslayout);
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            Intent i = new Intent(Puzzles.this, Stage5.class);
-                            startActivity(i);
-                        }
-                    }, TIME_OUT);
-                }
-            });
         }
 
 
@@ -527,90 +505,6 @@ public class Puzzles extends AppCompatActivity {
                 }, TIME_OUT);
             }
         });
-
-        /*stage2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mp = MediaPlayer.create(Puzzles.this, R.raw.click);
-                mp.start();
-
-                YoYo.with(Techniques.Tada)
-                        .duration(1000)
-                        .playOn(findViewById(R.id.stage_2));
-
-                final View myLayout = findViewById(R.id.puzzleslayout);
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        Intent i = new Intent(Puzzles.this, Stage2.class);
-                        startActivity(i);
-                    }
-                }, TIME_OUT);
-            }
-        });
-
-        stage3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mp = MediaPlayer.create(Puzzles.this, R.raw.click);
-                mp.start();
-
-                YoYo.with(Techniques.Tada)
-                        .duration(1000)
-                        .playOn(findViewById(R.id.stage_3));
-
-                final View myLayout = findViewById(R.id.puzzleslayout);
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        Intent i = new Intent(Puzzles.this, Stage3.class);
-                        startActivity(i);
-                    }
-                }, TIME_OUT);
-            }
-        });
-
-        stage4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mp = MediaPlayer.create(Puzzles.this, R.raw.click);
-                mp.start();
-
-                YoYo.with(Techniques.Tada)
-                        .duration(1000)
-                        .playOn(findViewById(R.id.stage_4));
-
-                final View myLayout = findViewById(R.id.puzzleslayout);
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        Intent i = new Intent(Puzzles.this, Stage4.class);
-                        startActivity(i);
-                    }
-                }, TIME_OUT);
-            }
-        });
-
-        stage5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mp = MediaPlayer.create(Puzzles.this, R.raw.click);
-                mp.start();
-
-                YoYo.with(Techniques.Tada)
-                        .duration(1000)
-                        .playOn(findViewById(R.id.stage_5));
-
-                final View myLayout = findViewById(R.id.puzzleslayout);
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        Intent i = new Intent(Puzzles.this, Stage5.class);
-                        startActivity(i);
-                    }
-                }, TIME_OUT);
-            }
-        });*/
     }
 
     @Override
