@@ -1,7 +1,11 @@
 <resources>
-    <string name="app_name">Math Quiz</string>
+    <string name="app_name">Einstein Journey</string>
     <string name="contin">Continue</string>
     <string name="newgame">New Game</string>
+    <string name="beggin">Beginners</string>
+    <string name="inter">Intermediate</string>
+    <string name="advance">Advanced</string>
+    <string name="expert">Expert</string>
     <string name="puzzles">Quizzes</string>
     <string name="stage1">Quiz 1</string>
     <string name="stage2">Quiz 2</string>
@@ -16,4 +20,7 @@
     <string name="quizz5">Quiz 5 Completed</string>
     <string name="preference_file_key">preef</string>
     <string name="saved_high_score_key">level</string>
+
+    <string name="preference_file_key2">preef2</string>
+    <string name="saved_high_score_key2">coin</string>
 </resources>

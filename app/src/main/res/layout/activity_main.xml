@@ -15,7 +15,7 @@
         android:id="@+id/appname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="30dp"
         android:gravity="center"
         android:fontFamily="casual"
@@ -26,10 +26,10 @@
         />
 
     <Button
-        android:id="@+id/newgame_btn"
-        android:layout_width="200dp"
+        android:id="@+id/beginners_btn"
+        android:layout_width="250dp"
         android:layout_height="60dp"
-        android:text="@string/newgame"
+        android:text="@string/beggin"
         style="@style/item_style"
         android:layout_gravity="center"
         android:clickable="true"
@@ -38,10 +38,34 @@
         />
 
         <Button
-            android:id="@+id/quiz_btn"
-            android:layout_width="200dp"
+            android:id="@+id/intermediate_btn"
+            android:layout_width="250dp"
             android:layout_height="60dp"
-            android:text="@string/puzzles"
+            android:text="@string/inter"
+            style="@style/item_style"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:background="@drawable/image"
+            android:layout_marginBottom="30dp"
+            />
+
+        <Button
+            android:id="@+id/advanced_btn"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="@string/advance"
+            style="@style/item_style"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:background="@drawable/image"
+            android:layout_marginBottom="30dp"
+            />
+
+        <Button
+            android:id="@+id/expert_btn"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="@string/expert"
             style="@style/item_style"
             android:layout_gravity="center"
             android:clickable="true"

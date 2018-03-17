@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ten"
+        android:icon="@drawable/einsten"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/ten"
+        android:roundIcon="@drawable/einsten"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -20,47 +20,137 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Puzzles"
+            android:name=".Beginners.Beginners"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Stages.Stage1"
+            android:name=".Beginners.Quizzes.Quiz_bgn1"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Stages.Stage2"
+            android:name=".Beginners.Quizzes.Quiz_bgn2"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Stages.Stage3"
+            android:name=".Beginners.Quizzes.Quiz_bgn3"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Stages.Stage4"
+            android:name=".Beginners.Quizzes.Quiz_bgn4"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Stages.Stage5"
+            android:name=".Beginners.Quizzes.Quiz_bgn5"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Trophies.Trophy1"
+            android:name=".Beginners.Trophies.Trophy_bgn1"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Trophies.Trophy2"
+            android:name=".Beginners.Trophies.Trophy_bgn2"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Trophies.Trophy3"
+            android:name=".Beginners.Trophies.Trophy_bgn3"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Trophies.Trophy4"
+            android:name=".Beginners.Trophies.Trophy_bgn4"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Trophies.Trophy5"
+            android:name=".Beginners.Trophies.Trophy_bgn5"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Beginners.Quizzes.Quiz_bgn6"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Quizzes.Quiz_bgn7"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Quizzes.Quiz_bgn8"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Quizzes.Quiz_bgn9"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Quizzes.Quiz_bgn10"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Quizzes.Quiz_bgn11"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Quizzes.Quiz_bgn12"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Quizzes.Quiz_bgn13"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Quizzes.Quiz_bgn14"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Quizzes.Quiz_bgn15"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Quizzes.Quiz_bgn16"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Quizzes.Quiz_bgn17"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Quizzes.Quiz_bgn18"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Quizzes.Quiz_bgn19"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Quizzes.Quiz_bgn20"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Trophies.Trophy_bgn6"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Trophies.Trophy_bgn7"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Trophies.Trophy_bgn8"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Trophies.Trophy_bgn9"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Trophies.Trophy_bgn10"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Trophies.Trophy_bgn11"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Trophies.Trophy_bgn12"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Trophies.Trophy_bgn13"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Trophies.Trophy_bgn14"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Trophies.Trophy_bgn15"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Trophies.Trophy_bgn16"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Trophies.Trophy_bgn17"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Trophies.Trophy_bgn18"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Trophies.Trophy_bgn19"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Beginners.Trophies.Trophy_bgn20"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
