@@ -64,16 +64,22 @@ public class Quiz_bgn1 extends AppCompatActivity {
         hinttext = (TextView) findViewById(R.id.hinttext);
         coinstext = (TextView) findViewById(R.id.coins);
 
-        Context context = Quiz_bgn1.this;
+        final Context context = Quiz_bgn1.this;
         final SharedPreferences sharedPref = context.getSharedPreferences(getString(R.string.preference_file_key2), Context.MODE_PRIVATE);
-
-        final SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt(getString(R.string.saved_high_score_key2), 6);
-        editor.commit();
 
         final int highScore = sharedPref.getInt(getString(R.string.saved_high_score_key2), 0);
 
-        coinstext.setText("" + highScore);
+        final SharedPreferences.Editor editor = sharedPref.edit();
+
+        if (highScore < 1)
+        {
+        editor.putInt(getString(R.string.saved_high_score_key2), 1);
+        editor.commit();
+        }
+
+        final int highScore2 = sharedPref.getInt(getString(R.string.saved_high_score_key2), 0);
+
+        coinstext.setText("" + highScore2);
 
         numberstext.setText(" ");
 
@@ -252,7 +258,7 @@ public class Quiz_bgn1 extends AppCompatActivity {
 
                 YoYo.with(Techniques.Tada)
                         .duration(500)
-                        .playOn(findViewById(R.id.number9));
+                        .playOn(findViewById(R.id.minus));
                 numberstext.setText(numberstext.getText() + "-");
             }
         });
@@ -267,7 +273,7 @@ public class Quiz_bgn1 extends AppCompatActivity {
 
                 YoYo.with(Techniques.Tada)
                         .duration(500)
-                        .playOn(findViewById(R.id.number9));
+                        .playOn(findViewById(R.id.dot));
                 numberstext.setText(numberstext.getText() + ".");
             }
         });
@@ -278,6 +284,13 @@ public class Quiz_bgn1 extends AppCompatActivity {
             public void onClick(View view) {
                 if (numberstext.getText().toString().equals(" 10"))
                 {
+                    final int highScore4 = sharedPref.getInt(getString(R.string.saved_high_score_key2), 0);
+                    if (highScore4 <= 1)
+                    {
+                        editor.putInt(getString(R.string.saved_high_score_key2), highScore4 + 1);
+                        editor.commit();
+                    }
+
                     releaseMediaPlayer();
 
                     mp = MediaPlayer.create(Quiz_bgn1.this, R.raw.click);
@@ -319,52 +332,67 @@ public class Quiz_bgn1 extends AppCompatActivity {
                 Animation fab_open = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.open);
                 Animation fab_close = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.close);
 
-                int id = view.getId();
-                switch (id) {
-                    case R.id.idea_btn:
 
-                        if (isFabOpen) {
+                if (highScore2 >= 2) {
+                    int id = view.getId();
+                    switch (id) {
+                        case R.id.idea_btn:
 
-                            YoYo.with(Techniques.Bounce)
-                                    .duration(1000)
-                                    .playOn(findViewById(R.id.idea_btn));
-                            hinttext.startAnimation(fab_close);
+                            if (isFabOpen) {
 
-                            hinttext.setClickable(false);
+                                YoYo.with(Techniques.Bounce)
+                                        .duration(1000)
+                                        .playOn(findViewById(R.id.idea_btn));
+                                hinttext.startAnimation(fab_close);
 
-                            isFabOpen = false;
-                            Log.d("Raj", "close");
+                                hinttext.setClickable(false);
 
-                        } else {
-                            // Flash, Pulse, RubberBand, Shake, Swing, Wobble, Bounce, Tada, StandUp, Wave
-                            YoYo.with(Techniques.Bounce)
-                                    .duration(1000)
-                                    .repeat(1)
-                                    .playOn(findViewById(R.id.idea_btn));
+                                isFabOpen = false;
+                                Log.d("Raj", "close");
 
-                            releaseMediaPlayer();
+                            } else {
+                                // Flash, Pulse, RubberBand, Shake, Swing, Wobble, Bounce, Tada, StandUp, Wave
+                                YoYo.with(Techniques.Bounce)
+                                        .duration(1000)
+                                        .repeat(1)
+                                        .playOn(findViewById(R.id.idea_btn));
 
-                            mp = MediaPlayer.create(Quiz_bgn1.this, R.raw.idea);
-                            mp.start();
+                                releaseMediaPlayer();
 
-                            editor.putInt(getString(R.string.saved_high_score_key2), highScore - 2);
-                            editor.commit();
+                                mp = MediaPlayer.create(Quiz_bgn1.this, R.raw.idea);
+                                mp.start();
 
-                            final int highScore2 = sharedPref.getInt(getString(R.string.saved_high_score_key2), 0);
+                                editor.putInt(getString(R.string.saved_high_score_key2), highScore2 - 2);
+                                editor.commit();
 
-                            coinstext.setText("" + highScore2);
+                                final int highScore3 = sharedPref.getInt(getString(R.string.saved_high_score_key2), 0);
 
+                                coinstext.setText("" + highScore3);
 
+                                hinttext.startAnimation(fab_open);
+                                hinttext.setClickable(true);
 
-                            hinttext.startAnimation(fab_open);
-                            hinttext.setClickable(true);
+                                isFabOpen = true;
+                                Log.d("Raj", "open");
 
-                            isFabOpen = true;
-                            Log.d("Raj", "open");
-
-                        }
-                        break;
+                            }
+                            break;
+                    }
                 }
+                else
+                    {
+                        YoYo.with(Techniques.Bounce)
+                                .duration(1000)
+                                .repeat(1)
+                                .playOn(findViewById(R.id.idea_btn));
+
+                        releaseMediaPlayer();
+
+                        mp = MediaPlayer.create(Quiz_bgn1.this, R.raw.idea);
+                        mp.start();
+                        Snackbar.make(view, "You Don't Have Enough Coins", Snackbar.LENGTH_LONG).show();
+
+                    }
             }
         });
 

@@ -1,26 +1,60 @@
 <resources>
-    <string name="app_name">Einstein Journey</string>
+    // main menu
+    <string name="app_name">Einstein World</string>
+    <string name="mainmenu">Main Menu</string>
     <string name="contin">Continue</string>
     <string name="newgame">New Game</string>
     <string name="beggin">Beginners</string>
     <string name="inter">Intermediate</string>
     <string name="advance">Advanced</string>
     <string name="expert">Expert</string>
+    // quzzes
     <string name="puzzles">Quizzes</string>
+    // stages
     <string name="stage1">Quiz 1</string>
     <string name="stage2">Quiz 2</string>
     <string name="stage3">Quiz 3</string>
     <string name="stage4">Quiz 4</string>
     <string name="stage5">Quiz 5</string>
-    <string name="mainmenu">Main Menu</string>
-    <string name="quizz1">Quiz 1 Completed</string>
-    <string name="quizz2">Quiz 2 Completed</string>
-    <string name="quizz3">Quiz 3 Completed</string>
-    <string name="quizz4">Quiz 4 Completed</string>
-    <string name="quizz5">Quiz 5 Completed</string>
+    <string name="stage6">Quiz 6</string>
+    <string name="stage7">Quiz 7</string>
+    <string name="stage8">Quiz 8</string>
+    <string name="stage9">Quiz 9</string>
+    <string name="stage10">Quiz 10</string>
+    <string name="stage11">Quiz 11</string>
+    <string name="stage12">Quiz 12</string>
+    <string name="stage13">Quiz 13</string>
+    <string name="stage14">Quiz 14</string>
+    <string name="stage15">Quiz 15</string>
+    <string name="stage16">Quiz 16</string>
+    <string name="stage17">Quiz 17</string>
+    <string name="stage18">Quiz 18</string>
+    <string name="stage19">Quiz 19</string>
+    <string name="stage20">Quiz 20</string>
+    // trophies
+    <string name="quiz1">Quiz 1 Completed</string>
+    <string name="quiz2">Quiz 2 Completed</string>
+    <string name="quiz3">Quiz 3 Completed</string>
+    <string name="quiz4">Quiz 4 Completed</string>
+    <string name="quiz5">Quiz 5 Completed</string>
+    <string name="quiz6">Quiz 6 Completed</string>
+    <string name="quiz7">Quiz 7 Completed</string>
+    <string name="quiz8">Quiz 8 Completed</string>
+    <string name="quiz9">Quiz 9 Completed</string>
+    <string name="quiz10">Quiz 10 Completed</string>
+    <string name="quiz11">Quiz 11 Completed</string>
+    <string name="quiz12">Quiz 12 Completed</string>
+    <string name="quiz13">Quiz 13 Completed</string>
+    <string name="quiz14">Quiz 14 Completed</string>
+    <string name="quiz15">Quiz 15 Completed</string>
+    <string name="quiz16">Quiz 16 Completed</string>
+    <string name="quiz17">Quiz 17 Completed</string>
+    <string name="quiz18">Quiz 18 Completed</string>
+    <string name="quiz19">Quiz 19 Completed</string>
+    <string name="quiz20">Quiz 20 Completed</string>
+    // data
     <string name="preference_file_key">preef</string>
     <string name="saved_high_score_key">level</string>
-
     <string name="preference_file_key2">preef2</string>
     <string name="saved_high_score_key2">coin</string>
 </resources>

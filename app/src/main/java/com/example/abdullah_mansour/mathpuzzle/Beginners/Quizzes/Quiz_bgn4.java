@@ -1,7 +1,9 @@
 package com.example.abdullah_mansour.mathpuzzle.Beginners.Quizzes;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Handler;
 import android.support.design.widget.Snackbar;
@@ -23,7 +25,7 @@ import com.example.abdullah_mansour.mathpuzzle.R;
 import com.example.abdullah_mansour.mathpuzzle.Beginners.Trophies.Trophy_bgn4;
 
 public class Quiz_bgn4 extends AppCompatActivity {
-    private TextView numberstext,hinttext;
+    private TextView numberstext,hinttext,coinstext;
     private ImageView idea;
     private Button submit,delete;
     private Button number0,number1,number2,number3,number4,number5,number6,number7,number8,number9,minus,dot;
@@ -57,6 +59,17 @@ public class Quiz_bgn4 extends AppCompatActivity {
 
         idea = (ImageView) findViewById(R.id.idea_btn);
         hinttext = (TextView) findViewById(R.id.hinttext);
+        coinstext = (TextView) findViewById(R.id.coins);
+
+        final Context context = Quiz_bgn4.this;
+        final SharedPreferences sharedPref = context.getSharedPreferences(getString(R.string.preference_file_key2), Context.MODE_PRIVATE);
+
+        final int highScore = sharedPref.getInt(getString(R.string.saved_high_score_key2), 0);
+
+        final SharedPreferences.Editor editor = sharedPref.edit();
+
+
+        coinstext.setText("" + highScore);
 
         numberstext.setText(" ");
 
@@ -235,7 +248,7 @@ public class Quiz_bgn4 extends AppCompatActivity {
 
                 YoYo.with(Techniques.Tada)
                         .duration(500)
-                        .playOn(findViewById(R.id.number9));
+                        .playOn(findViewById(R.id.minus));
                 numberstext.setText(numberstext.getText() + "-");
             }
         });
@@ -250,7 +263,7 @@ public class Quiz_bgn4 extends AppCompatActivity {
 
                 YoYo.with(Techniques.Tada)
                         .duration(500)
-                        .playOn(findViewById(R.id.number9));
+                        .playOn(findViewById(R.id.dot));
                 numberstext.setText(numberstext.getText() + ".");
             }
         });
@@ -261,6 +274,14 @@ public class Quiz_bgn4 extends AppCompatActivity {
             public void onClick(View view) {
                 if (numberstext.getText().toString().equals(" 2.5"))
                 {
+                    if (highScore <= 4)
+                    {
+                        final int highScore4 = sharedPref.getInt(getString(R.string.saved_high_score_key2), 0);
+
+                        editor.putInt(getString(R.string.saved_high_score_key2), highScore4 + 1);
+                        editor.commit();
+                    }
+
                     releaseMediaPlayer();
 
                     mp = MediaPlayer.create(Quiz_bgn4.this, R.raw.click);
@@ -302,42 +323,64 @@ public class Quiz_bgn4 extends AppCompatActivity {
                 Animation fab_open = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.open);
                 Animation fab_close = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.close);
 
-                int id = view.getId();
-                switch (id) {
-                    case R.id.idea_btn:
+                if (highScore >= 2) {
+                    int id = view.getId();
+                    switch (id) {
+                        case R.id.idea_btn:
 
-                        if (isFabOpen) {
+                            if (isFabOpen) {
 
-                            YoYo.with(Techniques.Bounce)
-                                    .duration(1000)
-                                    .playOn(findViewById(R.id.idea_btn));
-                            hinttext.startAnimation(fab_close);
+                                YoYo.with(Techniques.Bounce)
+                                        .duration(1000)
+                                        .playOn(findViewById(R.id.idea_btn));
+                                hinttext.startAnimation(fab_close);
 
-                            hinttext.setClickable(false);
+                                hinttext.setClickable(false);
 
-                            isFabOpen = false;
-                            Log.d("Raj", "close");
+                                isFabOpen = false;
+                                Log.d("Raj", "close");
 
-                        } else {
-                            // Flash, Pulse, RubberBand, Shake, Swing, Wobble, Bounce, Tada, StandUp, Wave
-                            YoYo.with(Techniques.Bounce)
-                                    .duration(1000)
-                                    .repeat(1)
-                                    .playOn(findViewById(R.id.idea_btn));
+                            } else {
+                                // Flash, Pulse, RubberBand, Shake, Swing, Wobble, Bounce, Tada, StandUp, Wave
+                                YoYo.with(Techniques.Bounce)
+                                        .duration(1000)
+                                        .repeat(1)
+                                        .playOn(findViewById(R.id.idea_btn));
 
-                            releaseMediaPlayer();
+                                releaseMediaPlayer();
 
-                            mp = MediaPlayer.create(Quiz_bgn4.this, R.raw.idea);
-                            mp.start();
+                                mp = MediaPlayer.create(Quiz_bgn4.this, R.raw.idea);
+                                mp.start();
 
-                            hinttext.startAnimation(fab_open);
-                            hinttext.setClickable(true);
+                                editor.putInt(getString(R.string.saved_high_score_key2), highScore - 2);
+                                editor.commit();
 
-                            isFabOpen = true;
-                            Log.d("Raj", "open");
+                                final int highScore3 = sharedPref.getInt(getString(R.string.saved_high_score_key2), 0);
 
-                        }
-                        break;
+                                coinstext.setText("" + highScore3);
+
+                                hinttext.startAnimation(fab_open);
+                                hinttext.setClickable(true);
+
+                                isFabOpen = true;
+                                Log.d("Raj", "open");
+
+                            }
+                            break;
+                    }}
+                else
+                {
+                    YoYo.with(Techniques.Bounce)
+                            .duration(1000)
+                            .repeat(1)
+                            .playOn(findViewById(R.id.idea_btn));
+
+                    releaseMediaPlayer();
+
+                    mp = MediaPlayer.create(Quiz_bgn4.this, R.raw.idea);
+                    mp.start();
+
+                    Snackbar.make(view, "You Don't Have Enough Coins", Snackbar.LENGTH_LONG).show();
                 }
             }
         });
