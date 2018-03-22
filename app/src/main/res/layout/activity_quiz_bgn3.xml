@@ -197,13 +197,15 @@
 
             <TextView
                 android:id="@+id/numberstext"
-                style="@style/style2"
+                style="@style/item_style"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginRight="5dp"
                 android:layout_weight="3"
-                android:background="@drawable/image" />
+                android:background="@drawable/image"
+                android:gravity="center_vertical"
+                />
 
             <Button
                 android:id="@+id/deletetext"

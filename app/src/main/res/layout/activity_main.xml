@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abdullah_mansour.mathpuzzle.MainActivity"
+    android:background="@drawable/rsz_1wooden_background">
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -14,9 +22,9 @@
     <TextView
         android:id="@+id/appname"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="30dp"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:fontFamily="casual"
         android:text="@string/app_name"
@@ -28,49 +36,109 @@
     <Button
         android:id="@+id/beginners_btn"
         android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:text="@string/beggin"
+        android:layout_height="0dp"
+        android:layout_weight="2"
         style="@style/item_style"
         android:layout_gravity="center"
         android:clickable="true"
         android:background="@drawable/image"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/beggin1"
+        android:gravity="center"
         />
 
         <Button
             android:id="@+id/intermediate_btn"
             android:layout_width="250dp"
-            android:layout_height="60dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
             android:text="@string/inter"
             style="@style/item_style"
             android:layout_gravity="center"
             android:clickable="true"
             android:background="@drawable/image"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
             />
 
-        <Button
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
             android:id="@+id/advanced_btn"
             android:layout_width="250dp"
-            android:layout_height="60dp"
+            android:layout_height="match_parent"
             android:text="@string/advance"
             style="@style/item_style"
             android:layout_gravity="center"
             android:clickable="true"
             android:background="@drawable/image"
-            android:layout_marginBottom="30dp"
+            android:gravity="center"
             />
 
-        <Button
+        <ImageView
+            android:id="@+id/interlock"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/lock"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        >
+
+        <TextView
             android:id="@+id/expert_btn"
             android:layout_width="250dp"
-            android:layout_height="60dp"
+            android:layout_height="match_parent"
             android:text="@string/expert"
             style="@style/item_style"
             android:layout_gravity="center"
             android:clickable="true"
             android:background="@drawable/image"
-            android:layout_marginBottom="30dp"
+            android:gravity="center"
             />
 
+        <ImageView
+            android:id="@+id/expertlock"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/lock"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        >
+
+        <ImageView
+            android:id="@+id/exit_btn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/rsz_exit"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+
 </LinearLayout>
+
+
+
+</RelativeLayout>

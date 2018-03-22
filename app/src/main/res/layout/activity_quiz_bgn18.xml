@@ -85,78 +85,120 @@
             android:layout_toLeftOf="@+id/idea_btn"
             android:layout_toStartOf="@+id/idea_btn"
             android:background="@drawable/image"
-            android:text=" subtract numbers "
+            android:text=" answer like 5.5 "
             android:visibility="invisible"
             android:gravity="center"
             />
 
 
-        <TextView
-            android:id="@+id/textView"
-            style="@style/item_style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/textView2"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="68dp"
-            android:layout_marginStart="68dp"
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
             android:gravity="center"
-            android:text="if ," />
+            >
 
-        <TextView
-            android:id="@+id/textView2"
-            style="@style/item_style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/idea_btn"
-            android:layout_marginLeft="18dp"
-            android:layout_marginStart="18dp"
-            android:layout_toEndOf="@+id/textView5"
-            android:layout_toRightOf="@+id/textView5"
-            android:text="2 , 2 = 0" />
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/fullcat"
+                />
 
-        <TextView
-            style="@style/item_style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="18dp"
-            android:layout_marginStart="18dp"
-            android:layout_toEndOf="@+id/textView5"
-            android:layout_toRightOf="@+id/textView5"
-            android:layout_below="@+id/textView2"
-            android:text="3 , 1 = 2"
-            android:id="@+id/textView3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/item_style"
+                android:text="= 12"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                />
 
-        <TextView
-            android:id="@+id/textView4"
-            style="@style/item_style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="18dp"
-            android:layout_marginStart="18dp"
-            android:layout_toEndOf="@+id/textView5"
-            android:layout_toRightOf="@+id/textView5"
-            android:layout_below="@+id/textView3"
-            android:text="8 , 4 = 4" />
+        </LinearLayout>
 
-        <TextView
-            style="@style/item_style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView"
-            android:layout_alignStart="@+id/textView"
-            android:layout_below="@+id/textView4"
-            android:text="then ,"
-            android:id="@+id/textView5" />
+        <LinearLayout
+            android:id="@+id/lin2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/lin1"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            >
 
-        <TextView
-            style="@style/item_style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView3"
-            android:layout_below="@+id/textView5"
-            android:text="7 , 5 = ?" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/lin2"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/fullcat"
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/fullcat"
+                android:layout_marginLeft="20dp"
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/emptycat"
+                android:layout_marginLeft="40dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/item_style"
+                android:text="/"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="120dp"
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/emptycat"
+                android:layout_marginLeft="140dp"
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/fullcat"
+                android:layout_marginLeft="160dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/item_style"
+                android:text="= ?"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="240dp"
+                />
+
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
@@ -186,8 +228,9 @@
             android:layout_height="60dp"
             android:background="@drawable/image"
             android:layout_gravity="center_vertical"
-            style="@style/style2"
+            style="@style/item_style"
             android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
             />
 
         <Button

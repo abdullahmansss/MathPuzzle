@@ -85,7 +85,7 @@
             android:layout_toLeftOf="@+id/idea_btn"
             android:layout_toStartOf="@+id/idea_btn"
             android:background="@drawable/image"
-            android:text=" missing number "
+            android:text=" answer like 20-30 "
             android:visibility="invisible"
             android:gravity="center"
             />
@@ -94,13 +94,22 @@
         <LinearLayout
             android:id="@+id/lin1"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="120dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="5dp"
+            android:gravity="center"
             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/item_style"
+                android:text="0 , 1 , 2 , 3 "
+                android:gravity="center_vertical"
+                />
 
 
         </LinearLayout>
@@ -108,7 +117,7 @@
         <LinearLayout
             android:id="@+id/lin2"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
@@ -119,17 +128,18 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                style="@style/style2"
-                android:text="0 - 1 - 2 - 3 - 5"
+                android:layout_height="wrap_content"
+                style="@style/item_style"
+                android:text="5 , 6 , 7 , 8"
                 android:gravity="center_vertical"
                 />
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/lin3"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_below="@+id/lin2"
@@ -139,13 +149,35 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                style="@style/style2"
-                android:text="6 - 7 - 8 - 9 - 10"
+                android:layout_height="wrap_content"
+                style="@style/item_style"
+                android:text="9 , 10 , 11 , 13"
                 android:gravity="center_vertical"
                 />
 
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/lin3"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            >
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/item_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin3"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="" />
 
     </RelativeLayout>
 
@@ -175,8 +207,9 @@
             android:layout_height="60dp"
             android:background="@drawable/image"
             android:layout_gravity="center_vertical"
-            style="@style/style2"
+            style="@style/item_style"
             android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
             />
 
         <Button

@@ -207,8 +207,9 @@
             android:layout_height="60dp"
             android:background="@drawable/image"
             android:layout_gravity="center_vertical"
-            style="@style/style2"
+            style="@style/item_style"
             android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
             />
 
         <Button

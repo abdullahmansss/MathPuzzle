@@ -111,7 +111,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                style="@style/style2"
+                style="@style/item_style"
                 android:text="= 2"
                 android:gravity="center_vertical"
                 android:layout_marginLeft="5dp"
@@ -140,7 +140,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                style="@style/style2"
+                style="@style/item_style"
                 android:text="= 3"
                 android:gravity="center_vertical"
                 android:layout_marginLeft="5dp"
@@ -181,7 +181,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                style="@style/style2"
+                style="@style/item_style"
                 android:text="+"
                 android:gravity="center_vertical"
                 android:layout_marginLeft="120dp"
@@ -204,7 +204,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                style="@style/style2"
+                style="@style/item_style"
                 android:text="= ?"
                 android:gravity="center_vertical"
                 android:layout_marginLeft="240dp"
@@ -242,8 +242,9 @@
             android:layout_height="60dp"
             android:background="@drawable/image"
             android:layout_gravity="center_vertical"
-            style="@style/style2"
+            style="@style/item_style"
             android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
             />
 
         <Button
