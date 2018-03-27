@@ -274,7 +274,7 @@ public class Quiz_bgn17 extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (numberstext.getText().toString().equals(" 9"))
+                if (numberstext.getText().toString().equals(" 10.5"))
                 {
                     if (highScore <= 17)
                     {
