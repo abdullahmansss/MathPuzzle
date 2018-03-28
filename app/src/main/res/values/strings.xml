@@ -77,4 +77,9 @@
     <string name="saved_high_score_key">level</string>
     <string name="preference_file_key2">preef2</string>
     <string name="saved_high_score_key2">coin</string>
+
+    <string name="intermediatelevel">intermediatelevel</string>
+    <string name="intermediatehighscore">score</string>
+    <string name="intermediatecoins">intermediatecoins</string>
+    <string name="intermediatecoinscore">coinscore</string>
 </resources>

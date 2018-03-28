@@ -185,9 +185,9 @@ public class MainActivity extends AppCompatActivity {
             beginners.setText(R.string.beggin19);
         }
 
-        if (highScore == 19)
+        if (highScore == 20)
         {
-            beginners.setText(R.string.beggin19);
+            beginners.setText(R.string.beggin20);
         }
 
         beginners.setOnClickListener(new View.OnClickListener() {

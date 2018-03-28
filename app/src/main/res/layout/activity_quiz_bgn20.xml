@@ -114,7 +114,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/item_style"
-                android:text="-4 , 0 , 4 , 8"
+                android:text="100000 x 10 = 1000000"
                 android:gravity="center_vertical"
                 />
 
@@ -137,7 +137,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/item_style"
-                android:text="16 , 20 , 24"
+                android:text="10000 x 10 = 100000"
                 android:gravity="center_vertical"
                 />
 
@@ -158,7 +158,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/item_style"
-                android:text="36 , 40 , 44"
+                android:text="1000 x 10 = 10000"
+                android:gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/lin3"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/item_style"
+                android:text="100 x 10 = ?"
                 android:gravity="center_vertical"
                 />
 

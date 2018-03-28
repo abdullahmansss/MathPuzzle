@@ -929,6 +929,7 @@ public class Beginners extends AppCompatActivity {
             change_quiz16();
             change_quiz17();
             change_quiz18();
+            change_quiz19();
             stage2.setClickable(true);
             stage3.setClickable(true);
             stage4.setClickable(true);
@@ -946,6 +947,91 @@ public class Beginners extends AppCompatActivity {
             stage16.setClickable(true);
             stage17.setClickable(true);
             stage18.setClickable(true);
+            stage19.setClickable(true);
+        }
+
+        if (highScore == 19)
+        {
+            change_quiz2();
+            change_quiz3();
+            change_quiz4();
+            change_quiz5();
+            change_quiz6();
+            change_quiz7();
+            change_quiz8();
+            change_quiz9();
+            change_quiz10();
+            change_quiz11();
+            change_quiz12();
+            change_quiz13();
+            change_quiz14();
+            change_quiz15();
+            change_quiz16();
+            change_quiz17();
+            change_quiz18();
+            change_quiz19();
+            change_quiz20();
+            stage2.setClickable(true);
+            stage3.setClickable(true);
+            stage4.setClickable(true);
+            stage5.setClickable(true);
+            stage6.setClickable(true);
+            stage7.setClickable(true);
+            stage8.setClickable(true);
+            stage9.setClickable(true);
+            stage10.setClickable(true);
+            stage11.setClickable(true);
+            stage12.setClickable(true);
+            stage13.setClickable(true);
+            stage14.setClickable(true);
+            stage15.setClickable(true);
+            stage16.setClickable(true);
+            stage17.setClickable(true);
+            stage18.setClickable(true);
+            stage19.setClickable(true);
+            stage20.setClickable(true);
+        }
+
+        if (highScore == 20)
+        {
+            change_quiz2();
+            change_quiz3();
+            change_quiz4();
+            change_quiz5();
+            change_quiz6();
+            change_quiz7();
+            change_quiz8();
+            change_quiz9();
+            change_quiz10();
+            change_quiz11();
+            change_quiz12();
+            change_quiz13();
+            change_quiz14();
+            change_quiz15();
+            change_quiz16();
+            change_quiz17();
+            change_quiz18();
+            change_quiz19();
+            change_quiz20();
+            stage2.setClickable(true);
+            stage3.setClickable(true);
+            stage4.setClickable(true);
+            stage5.setClickable(true);
+            stage6.setClickable(true);
+            stage7.setClickable(true);
+            stage8.setClickable(true);
+            stage9.setClickable(true);
+            stage10.setClickable(true);
+            stage11.setClickable(true);
+            stage12.setClickable(true);
+            stage13.setClickable(true);
+            stage14.setClickable(true);
+            stage15.setClickable(true);
+            stage16.setClickable(true);
+            stage17.setClickable(true);
+            stage18.setClickable(true);
+            stage19.setClickable(true);
+            stage20.setClickable(true);
         }
 
     }
