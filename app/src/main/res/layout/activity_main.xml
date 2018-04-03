@@ -57,7 +57,7 @@
             android:background="@drawable/image"
             android:clickable="true"
             android:gravity="center"
-            android:text="@string/inter" />
+            android:text="@string/inter1" />
 
         <RelativeLayout
             android:layout_width="match_parent"

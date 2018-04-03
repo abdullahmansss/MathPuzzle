@@ -1,9 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.abdullah_mansour.mathpuzzle.Intermediate.Trophies.Trophy_inter7">
+    tools:context="com.example.abdullah_mansour.mathpuzzle.Beginners.Trophies.Trophy_bgn1"
+    android:background="@drawable/rsz_1wooden_background"
+    android:orientation="vertical"
+    android:id="@+id/trophy1layout"
+    >
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/item_style"
+        android:text="@string/quiz7"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/trophy1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="30dp"
+            android:src="@drawable/trophy"/>
+
+        <TextView
+            style="@style/puzzle_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="61dp"
+            android:text="7" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/contin_btn"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/contin"
+        style="@style/item_style"
+        android:clickable="true"
+        android:background="@drawable/image"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/main_menu_btn"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"        android:text="@string/mainmenu"
+        style="@style/item_style"
+        android:clickable="true"
+        android:background="@drawable/image"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/rate_btn"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rate"
+            android:layout_marginRight="40dp"
+            />
+
+        <ImageView
+            android:id="@+id/share_btn"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

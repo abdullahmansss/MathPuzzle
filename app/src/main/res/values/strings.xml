@@ -25,8 +25,31 @@
     <string name="beggin18">Beginners \n 18 / 20</string>
     <string name="beggin19">Beginners \n 19 / 20</string>
     <string name="beggin20">Beginners \n 20 / 20</string>
-    <string name="inter">Intermediate</string>
+
+    <string name="inter0">Intermediate</string>
+    <string name="inter1">Intermediate \n 1 / 20</string>
+    <string name="inter2">Intermediate \n 2 / 20</string>
+    <string name="inter3">Intermediate \n 3 / 20</string>
+    <string name="inter4">Intermediate \n 4 / 20</string>
+    <string name="inter5">Intermediate \n 5 / 20</string>
+    <string name="inter6">Intermediate \n 6 / 20</string>
+    <string name="inter7">Intermediate \n 7 / 20</string>
+    <string name="inter8">Intermediate \n 8 / 20</string>
+    <string name="inter9">Intermediate \n 9 / 20</string>
+    <string name="inter10">Intermediate \n 10 / 20</string>
+    <string name="inter11">Intermediate \n 11 / 20</string>
+    <string name="inter12">Intermediate \n 12 / 20</string>
+    <string name="inter13">Intermediate \n 13 / 20</string>
+    <string name="inter14">Intermediate \n 14 / 20</string>
+    <string name="inter15">Intermediate \n 15 / 20</string>
+    <string name="inter16">Intermediate \n 16 / 20</string>
+    <string name="inter17">Intermediate \n 17 / 20</string>
+    <string name="inter18">Intermediate \n 18 / 20</string>
+    <string name="inter19">Intermediate \n 19 / 20</string>
+    <string name="inter20">Intermediate \n 20 / 20</string>
+
     <string name="advance">Advanced</string>
+
     <string name="expert">Expert</string>
     // quzzes
     <string name="puzzles">Quizzes</string>

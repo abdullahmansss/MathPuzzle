@@ -1,9 +1,268 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.abdullah_mansour.mathpuzzle.Intermediate.Intermediate">
+    tools:context="com.example.abdullah_mansour.mathpuzzle.MainActivity"
+    android:background="@drawable/rsz_1wooden_background"
+    android:orientation="vertical"
+    android:id="@+id/puzzleslayout"
+    >
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+
+        <Button
+            android:id="@+id/stage_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="1"
+            style="@style/puzzle_style"
+            android:background="@drawable/image"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/stage_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/stage_3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/stage_4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            android:layout_margin="5dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+        <Button
+            android:id="@+id/stage_5"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            />
+
+        <Button
+            android:id="@+id/stage_6"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            />
+
+        <Button
+            android:id="@+id/stage_7"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            />
+
+        <Button
+            android:id="@+id/stage_8"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+        <Button
+            android:id="@+id/stage_9"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            />
+
+        <Button
+            android:id="@+id/stage_10"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            />
+
+        <Button
+            android:id="@+id/stage_11"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            />
+
+        <Button
+            android:id="@+id/stage_12"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+
+        <Button
+            android:id="@+id/stage_13"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            />
+
+        <Button
+            android:id="@+id/stage_14"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            />
+
+        <Button
+            android:id="@+id/stage_15"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            />
+
+        <Button
+            android:id="@+id/stage_16"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+        <Button
+            android:id="@+id/stage_17"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            />
+
+        <Button
+            android:id="@+id/stage_18"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            />
+
+        <Button
+            android:id="@+id/stage_19"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            />
+
+        <Button
+            android:id="@+id/stage_20"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/puzzle_style"
+            android:background="@drawable/lock"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

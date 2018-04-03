@@ -21,6 +21,7 @@ import android.widget.TextView;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.example.abdullah_mansour.mathpuzzle.Beginners.Beginners;
+import com.example.abdullah_mansour.mathpuzzle.Intermediate.Intermediate;
 
 public class MainActivity extends AppCompatActivity {
     private Button beginners,intermediate;
@@ -52,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPref = context.getSharedPreferences(getString(R.string.preference_file_key), Context.MODE_PRIVATE);
 
         int highScore = sharedPref.getInt(getString(R.string.saved_high_score_key), 0);
+
+        SharedPreferences sharedPref2 = context.getSharedPreferences(getString(R.string.intermediatelevel), Context.MODE_PRIVATE);
+
+        int highScore2 = sharedPref2.getInt(getString(R.string.intermediatehighscore), 0);
 
         YoYo.with(Techniques.FadeInDown)
                 .duration(1500)
@@ -190,6 +195,112 @@ public class MainActivity extends AppCompatActivity {
             beginners.setText(R.string.beggin20);
         }
 
+        // intermediate
+        if (highScore2 == 0)
+        {
+            intermediate.setText(R.string.inter0);
+        }
+
+        if (highScore2 == 1)
+        {
+            intermediate.setText(R.string.inter1);
+        }
+
+        if (highScore2 == 2)
+        {
+            intermediate.setText(R.string.inter2);
+        }
+
+        if (highScore2 == 3)
+        {
+            intermediate.setText(R.string.inter3);
+        }
+
+        if (highScore2 == 4)
+        {
+            intermediate.setText(R.string.inter4);
+        }
+
+        if (highScore2 == 5)
+        {
+            intermediate.setText(R.string.inter5);
+        }
+
+        if (highScore2 == 6)
+        {
+            intermediate.setText(R.string.inter6);
+        }
+
+        if (highScore2 == 7)
+        {
+            intermediate.setText(R.string.inter7);
+        }
+
+        if (highScore2 == 8)
+        {
+            intermediate.setText(R.string.inter8);
+        }
+
+        if (highScore2 == 9)
+        {
+            intermediate.setText(R.string.inter9);
+        }
+
+        if (highScore2 == 10)
+        {
+            intermediate.setText(R.string.inter10);
+        }
+
+        if (highScore2 == 11)
+        {
+            intermediate.setText(R.string.inter11);
+        }
+
+        if (highScore2 == 12)
+        {
+            intermediate.setText(R.string.inter12);
+        }
+
+        if (highScore2 == 13)
+        {
+            intermediate.setText(R.string.inter13);
+        }
+
+        if (highScore2 == 14)
+        {
+            intermediate.setText(R.string.inter14);
+        }
+
+        if (highScore2 == 15)
+        {
+            intermediate.setText(R.string.inter15);
+        }
+
+        if (highScore2 == 16)
+        {
+            intermediate.setText(R.string.inter16);
+        }
+
+        if (highScore2 == 17)
+        {
+            intermediate.setText(R.string.inter17);
+        }
+
+        if (highScore2 == 18)
+        {
+            intermediate.setText(R.string.inter18);
+        }
+
+        if (highScore2 == 19)
+        {
+            intermediate.setText(R.string.inter19);
+        }
+
+        if (highScore2 == 20)
+        {
+            intermediate.setText(R.string.inter20);
+        }
+
         beginners.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -205,6 +316,27 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Intent i = new Intent(MainActivity.this, Beginners.class);
+                        startActivity(i);
+                    }
+                }, TIME_OUT);
+            }
+        });
+
+        intermediate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mp = MediaPlayer.create(MainActivity.this, R.raw.click);
+                mp.start();
+
+                YoYo.with(Techniques.Tada)
+                        .duration(1000)
+                        .playOn(findViewById(R.id.intermediate_btn));
+
+                final View myLayout = findViewById(R.id.mainmenulayout);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent i = new Intent(MainActivity.this, Intermediate.class);
                         startActivity(i);
                     }
                 }, TIME_OUT);
