@@ -15,6 +15,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -182,129 +183,174 @@
             android:name=".Beginners.Trophies.Trophy_bgn20"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Intermediate.Intermediate"
+        <activity
+            android:name=".Intermediate.Intermediate"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter1"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter2"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter3"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter4"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter5"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter6"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter6"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter7"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter7"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter8"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter8"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter9"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter9"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter10"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter10"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter11"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter11"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter12"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter12"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter13"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter13"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter14"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter14"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter15"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter15"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter16"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter16"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter17"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter17"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter18"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter18"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter19"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter19"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Quizzes.Quiz_inter20"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Quizzes.Quiz_inter20"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter1"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter2"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter3"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter4"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter5"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter6"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter6"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter7"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter7"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter8"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter8"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter9"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter9"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter10"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter10"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter11"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter11"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter12"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter12"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter13"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter13"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter14"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter14"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter15"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter15"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter16"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter16"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter17"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter17"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter18"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter18"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter19"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter19"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Intermediate.Trophies.Trophy_inter20"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermediate.Trophies.Trophy_inter20"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AboutUs"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
     </application>
 
 </manifest>

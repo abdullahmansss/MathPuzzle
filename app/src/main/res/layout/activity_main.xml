@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.abdullah_mansour.mathpuzzle.MainActivity"
-    android:background="@drawable/rsz_1wooden_background">
+    android:background="@drawable/rsz_1wooden_background"
+    >
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -114,6 +115,15 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/info_btn"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/information" />
 
             <ImageView
                 android:id="@+id/exit_btn"

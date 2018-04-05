@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.daimajia.androidanimations.library.Techniques;
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private Button beginners,intermediate;
     private TextView advanced,expert;
     private MediaPlayer mp;
-    private ImageView exit,interlock,expertlock;
+    private ImageView exit,info,interlock,expertlock;
     private static int TIME_OUT = 700; //Time to launch the another activity
 
 
@@ -41,11 +42,12 @@ public class MainActivity extends AppCompatActivity {
         advanced = (TextView) findViewById(R.id.advanced_btn);
         expert = (TextView) findViewById(R.id.expert_btn);
         exit = (ImageView) findViewById(R.id.exit_btn);
+        info = (ImageView) findViewById(R.id.info_btn);
         interlock = (ImageView) findViewById(R.id.interlock);
         expertlock = (ImageView) findViewById(R.id.expertlock);
 
-        advanced.setPaintFlags(advanced.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-        expert.setPaintFlags(expert.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+        //advanced.setPaintFlags(advanced.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+        //expert.setPaintFlags(expert.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
 
 
 
@@ -63,32 +65,36 @@ public class MainActivity extends AppCompatActivity {
                 .playOn(findViewById(R.id.appname));
 
         YoYo.with(Techniques.FadeInDown)
-                .duration(3000)
+                .duration(2500)
                 .playOn(findViewById(R.id.beginners_btn));
 
         YoYo.with(Techniques.FadeInDown)
-                .duration(3000)
+                .duration(3500)
                 .playOn(findViewById(R.id.intermediate_btn));
 
         YoYo.with(Techniques.FadeInDown)
-                .duration(3000)
+                .duration(4500)
                 .playOn(findViewById(R.id.advanced_btn));
 
         YoYo.with(Techniques.FadeInDown)
-                .duration(3000)
-                .playOn(findViewById(R.id.expert_btn));
-
-        YoYo.with(Techniques.FadeInDown)
-                .duration(3000)
-                .playOn(findViewById(R.id.exit_btn));
-
-        YoYo.with(Techniques.FadeInDown)
-                .duration(3000)
+                .duration(4500)
                 .playOn(findViewById(R.id.interlock));
 
         YoYo.with(Techniques.FadeInDown)
-                .duration(3000)
+                .duration(5500)
+                .playOn(findViewById(R.id.expert_btn));
+
+        YoYo.with(Techniques.FadeInDown)
+                .duration(5500)
                 .playOn(findViewById(R.id.expertlock));
+
+        YoYo.with(Techniques.FadeInDown)
+                .duration(5500)
+                .playOn(findViewById(R.id.exit_btn));
+
+        YoYo.with(Techniques.FadeInDown)
+                .duration(5500)
+                .playOn(findViewById(R.id.info_btn));
 
         if (highScore == 0)
         {
@@ -370,6 +376,40 @@ public class MainActivity extends AppCompatActivity {
                                 })
                                 .setNegativeButton("No", null)
                                 .show();
+                    }
+                }, TIME_OUT);
+            }
+        });
+
+        info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                mp = MediaPlayer.create(MainActivity.this, R.raw.click);
+                mp.start();
+
+                YoYo.with(Techniques.Tada)
+                        .duration(1000)
+                        .playOn(findViewById(R.id.info_btn));
+                final View myLayout = findViewById(R.id.mainmenulayout);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        /*String subject = "Explain About App (Einstein World)";
+
+                        Intent i = new Intent(Intent.ACTION_SEND);
+                        i.setType("message/rfc822");
+                        i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"abdallahmansss@gmail.com"});
+                        i.putExtra(Intent.EXTRA_SUBJECT, subject);
+                        //i.putExtra(Intent.EXTRA_TEXT   , "body of email");
+                        try {
+                            startActivity(Intent.createChooser(i, "Send mail ..."));
+                        } catch (android.content.ActivityNotFoundException ex) {
+                            Toast.makeText(MainActivity.this, "There are no email clients installed", Toast.LENGTH_SHORT).show();
+                        }*/
+
+                        Intent n = new Intent(MainActivity.this, AboutUs.class);
+                        startActivity(n);
                     }
                 }, TIME_OUT);
             }

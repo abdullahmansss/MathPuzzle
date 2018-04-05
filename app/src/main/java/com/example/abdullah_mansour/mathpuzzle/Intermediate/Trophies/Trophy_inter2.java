@@ -18,6 +18,7 @@ import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.example.abdullah_mansour.mathpuzzle.Beginners.Beginners;
 import com.example.abdullah_mansour.mathpuzzle.Beginners.Trophies.Trophy_bgn2;
+import com.example.abdullah_mansour.mathpuzzle.Intermediate.Intermediate;
 import com.example.abdullah_mansour.mathpuzzle.MainActivity;
 import com.example.abdullah_mansour.mathpuzzle.R;
 
@@ -76,7 +77,7 @@ public class Trophy_inter2 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Intent i = new Intent(context, Beginners.class);
+                        Intent i = new Intent(context, Intermediate.class);
                         startActivity(i);
                     }
                 }, TIME_OUT);

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs"
+    android:background="@drawable/rsz_1wooden_background"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:src="@drawable/einsten"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/item_style"
+        android:text="@string/aboutus"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/appstartup"
+        android:layout_margin="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/facebook"
+            />
+
+        <ImageView
+            android:id="@+id/mail"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/mail"
+            android:layout_marginLeft="40dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+
+
+</LinearLayout>

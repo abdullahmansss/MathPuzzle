@@ -673,7 +673,7 @@ public class Intermediate extends AppCompatActivity {
             change_quiz7();
             change_quiz8();
             change_quiz9();
-            //change_quiz10();
+            change_quiz10();
             stage2.setClickable(true);
             stage3.setClickable(true);
             stage4.setClickable(true);
@@ -682,10 +682,10 @@ public class Intermediate extends AppCompatActivity {
             stage7.setClickable(true);
             stage8.setClickable(true);
             stage9.setClickable(true);
-            //stage10.setClickable(true);
+            stage10.setClickable(true);
         }
 
-        /*if (highScore == 10)
+        if (highScore == 10)
         {
             change_quiz2();
             change_quiz3();
@@ -696,7 +696,7 @@ public class Intermediate extends AppCompatActivity {
             change_quiz8();
             change_quiz9();
             change_quiz10();
-            change_quiz11();
+            //change_quiz11();
             stage2.setClickable(true);
             stage3.setClickable(true);
             stage4.setClickable(true);
@@ -706,10 +706,10 @@ public class Intermediate extends AppCompatActivity {
             stage8.setClickable(true);
             stage9.setClickable(true);
             stage10.setClickable(true);
-            stage11.setClickable(true);
+            //stage11.setClickable(true);
         }
 
-        if (highScore == 11)
+        /*if (highScore == 11)
         {
             change_quiz2();
             change_quiz3();

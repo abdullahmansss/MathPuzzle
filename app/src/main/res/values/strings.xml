@@ -105,4 +105,7 @@
     <string name="intermediatehighscore">score</string>
     <string name="intermediatecoins">intermediatecoins</string>
     <string name="intermediatecoinscore">coinscore</string>
+
+    <string name="aboutus">- Einstien World game is developed for all ages ..\n- It is more than one level ..\n- It depends on speed of intuition and focus ..\n- Thinking outside the box ..</string>
+
 </resources>

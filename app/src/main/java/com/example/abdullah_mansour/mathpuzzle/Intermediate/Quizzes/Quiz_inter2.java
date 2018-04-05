@@ -22,6 +22,7 @@ import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.example.abdullah_mansour.mathpuzzle.Beginners.Beginners;
 import com.example.abdullah_mansour.mathpuzzle.Beginners.Trophies.Trophy_bgn12;
+import com.example.abdullah_mansour.mathpuzzle.Intermediate.Intermediate;
 import com.example.abdullah_mansour.mathpuzzle.Intermediate.Trophies.Trophy_inter2;
 import com.example.abdullah_mansour.mathpuzzle.R;
 
@@ -409,7 +410,7 @@ public class Quiz_inter2 extends AppCompatActivity {
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        Intent n = new Intent(context, Beginners.class);
+                        Intent n = new Intent(context, Intermediate.class);
                         startActivity(n);
                     }
                 })
