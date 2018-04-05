@@ -86,7 +86,7 @@
             android:layout_toLeftOf="@+id/idea_btn"
             android:layout_toStartOf="@+id/idea_btn"
             android:background="@drawable/image"
-            android:text=" add numbers "
+            android:text=" 4-2 or 3 "
             android:visibility="invisible"
             android:gravity="center"
             />

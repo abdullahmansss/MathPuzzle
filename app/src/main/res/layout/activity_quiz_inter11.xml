@@ -78,7 +78,7 @@
             android:layout_toStartOf="@+id/idea_btn"
             android:background="@drawable/image"
             android:gravity="center"
-            android:text=" add numbers "
+            android:text=" remember "
             android:visibility="invisible" />
 
     </RelativeLayout>
@@ -105,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:text="1 , 4 , 4 , 6" />
+                android:text="" />
 
 
         </LinearLayout>
@@ -126,7 +126,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:text="5 , 3 , 10 , 1 = -30" />
+                android:text="Quiz 6 answer was" />
 
         </LinearLayout>
 
@@ -145,7 +145,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:text="2 , 3 , 7 , 9 = 10" />
+                android:text="= ??!" />
 
         </LinearLayout>
 
@@ -163,7 +163,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:text="5 , 5 , 18 , 15 = ?" />
+                android:text="" />
 
         </LinearLayout>
 
