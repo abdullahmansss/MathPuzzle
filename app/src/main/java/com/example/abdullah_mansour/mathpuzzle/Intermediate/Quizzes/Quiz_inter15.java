@@ -22,6 +22,7 @@ import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.example.abdullah_mansour.mathpuzzle.Intermediate.Intermediate;
 import com.example.abdullah_mansour.mathpuzzle.Intermediate.Trophies.Trophy_inter10;
+import com.example.abdullah_mansour.mathpuzzle.Intermediate.Trophies.Trophy_inter15;
 import com.example.abdullah_mansour.mathpuzzle.R;
 
 public class Quiz_inter15 extends AppCompatActivity {
